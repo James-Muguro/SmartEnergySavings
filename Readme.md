@@ -1,6 +1,6 @@
 # Feasibility Evaluation Model for Solar-Battery Integration
 
-## Projec Description
+## Project Description
 This project delves into the practicality of augmenting Naomi’s current solar power system with a battery. By analyzing Naomi’s hourly electricity data from 2020, the model estimates potential solar generation, battery storage, cost savings, and long-term returns. The analysis considers two future electricity price scenarios to provide a comprehensive view of the potential benefits of this sustainable energy solution.
 
 ## Purpose of the Model
