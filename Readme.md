@@ -1,7 +1,7 @@
-### Purpose of the Model
+## Purpose of the Model
 This model is designed to evaluate the feasibility of integrating a battery system into an existing solar electricity generation setup. The goal is to provide valuable insights into potential cost savings and the financial viability of such an installation.
 
-#### Data Checks and Results
+## Data Checks and Results
 The dataset undergoes rigorous checks to ensure data completeness and reliability. The following steps are performed:
 
 1. **Verification of Data Completeness:**
@@ -11,13 +11,13 @@ The dataset undergoes rigorous checks to ensure data completeness and reliabilit
 2. **Outlier Investigation:**
    - Identify and address outliers using boxplots.
 
-#### Assumptions
+## Assumptions
 The model operates under the following assumptions:
 
 - **Electricity Cost:** The cost of electricity per kWh is assumed to be $0.17.
 - **Battery Charge Level:** The maximum battery charge level is set at 100 kWh.
 
-#### Data Understanding
+## Data Understanding
 To gain a comprehensive understanding of the dataset, we undertake the following:
 
 1. **Data Types and Distributions:**
@@ -26,7 +26,7 @@ To gain a comprehensive understanding of the dataset, we undertake the following
 2. **Visualization:**
    - Utilize time-series line plots and histograms for visualization.
 
-#### Modeling Steps and Checks
+## Modeling Steps and Checks
 The model follows a systematic approach with clear steps and checks:
 
 1. **Average Solar Electricity Generation and Electricity Usage per Hour:**
@@ -50,15 +50,15 @@ The model follows a systematic approach with clear steps and checks:
 7. **Monthly Tabulation and Charting:**
    - Tabulate and visualize monthly solar generation, electricity usage, and purchased electricity.
 
-#### Long-Term Projections
+## Long-Term Projections
 To project future savings, we consider two scenarios of electricity price changes over 20 years.
 
-### Further Checks
+## Further Checks
 - **Internal Rate of Return (IRR) Calculation:**
   - Calculate IRR for different scenarios.
 
 - **Additional Metrics:**
   - Evaluate extra electricity met, implied savings, electricity price with inflation, NPV, and IRR.
 
-### Conclusion
+## Conclusion
 The documentation provides a detailed account of the model's steps, checks, and assumptions. It is structured logically for easy comprehension by both fellow and senior analysts. The model aims to offer valuable insights into the financial implications of integrating a battery into solar electricity generation.
