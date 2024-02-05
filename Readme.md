@@ -66,4 +66,4 @@ To project future savings, we consider two scenarios of electricity price change
   - Evaluate extra electricity met, implied savings, electricity price with inflation, NPV, and IRR.
 
 ## Conclusion
-The documentation provides a detailed account of the model's steps, checks, and assumptions. It is structured logically for easy comprehension by both fellow and senior analysts. The model aims to offer valuable insights into the financial implications of integrating a battery into solar electricity generation.
+This project is dedicated to offering valuable insights into the financial implications of integrating a battery into solar electricity generation. Leveraging the capabilities of Python and key libraries such as NumPy, Pandas, ipywidgets, tkinter, matplotlib, and seaborn, the project benefits from the efficient array manipulation tools provided by the NumPy community and the versatile visualization tools from the developers of matplotlib and seaborn. Throughout the development of this project, online tutorials and responses from the Stack Overflow community have played a crucial role, providing invaluable guidance and support.
