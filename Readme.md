@@ -1,42 +1,64 @@
-# Dream Housing Finance Data Analysis
+### Purpose of the Model
+This model is designed to evaluate the feasibility of integrating a battery system into an existing solar electricity generation setup. The goal is to provide valuable insights into potential cost savings and the financial viability of such an installation.
 
-## Description
+#### Data Checks and Results
+The dataset undergoes rigorous checks to ensure data completeness and reliability. The following steps are performed:
 
-This data analysis project focuses on automating the loan eligibility process based on customer details provided in online applications. The dataset, provided by Dream Housing Finance, covers data from four counties in Kenya. The analysis aims to gain insights into loan distribution, borrower demographics, loan book evolution over time, and factors influencing funding decisions.
+1. **Verification of Data Completeness:**
+   - Ensure all necessary fields are populated.
+   - Handle missing values appropriately.
 
-## Project Contents
+2. **Outlier Investigation:**
+   - Identify and address outliers using boxplots.
 
-The project consists of Python code for data analysis using libraries such as Pandas, NumPy, Matplotlib, Seaborn, and scikit-learn. The code includes:
+#### Assumptions
+The model operates under the following assumptions:
 
-1. Loading and understanding the dataset
-2. Exploratory Data Analysis (EDA) to visualize loan distribution, demographics, and numerical features
-3. Data cleaning, handling missing values, and converting date formats
-4. Advanced analysis, including clustering borrowers, predicting loan approval, and deriving new measures
-5. Segmentation and potential behavioral insights based on income groups, age brackets, and overconfidence bias
+- **Electricity Cost:** The cost of electricity per kWh is assumed to be $0.17.
+- **Battery Charge Level:** The maximum battery charge level is set at 100 kWh.
 
-## Usage
+#### Data Understanding
+To gain a comprehensive understanding of the dataset, we undertake the following:
 
-To explore this project:
+1. **Data Types and Distributions:**
+   - Explore data types and distributions for effective analysis.
 
-1. Clone the repository to your local machine.
-2. Run the provided Python code in a Jupyter notebook or any Python environment.
-3. Ensure you have Python installed on your machine. Specific analyses may require additional packages.
-4. Ensure you have the required libraries installed using tools like pip. The comments within the code provide details on necessary installations and steps.
+2. **Visualization:**
+   - Utilize time-series line plots and histograms for visualization.
 
-Feel free to modify the code, experiment with different parameters, and expand upon the analysis to suit your goals or specific requirements.
+#### Modeling Steps and Checks
+The model follows a systematic approach with clear steps and checks:
 
-## Project Structure
+1. **Average Solar Electricity Generation and Electricity Usage per Hour:**
+   - Calculate and visualize hourly averages.
 
-The project is organized into sections, each addressing a specific aspect of the Dream Housing Finance dataset. The structure includes:
+2. **Outlier Investigation:**
+   - Utilize boxplots to identify and address outliers.
 
-- Data Loading and Understanding
-- EDA and Data Visualization
-- Data Cleaning and Preprocessing
-- Advanced Analysis and Modeling
-- Segmentation and Behavioral Insights
+3. **Electricity Bought and Excess Solar Electricity Generated:**
+   - Calculate hourly electricity bought and excess solar electricity generated.
 
-You can explore the sections sequentially or focus on areas of interest. Each section is self-contained, allowing for independent exploration.
+4. **Cumulative Battery Charge Modeling:**
+   - Model the cumulative charge level of the battery over time.
 
-## Acknowledgments
+5. **Electricity Bought with Battery Installed:**
+   - Calculate electricity bought when a battery is installed.
 
-This project wouldn't have been possible without the power of Python and libraries like NumPy, Pandas, and Scikit-learn. I'm especially grateful to the NumPy community for their efficient array manipulation tools and to the Scikit-learn developers for their accessible machine learning algorithms. Additionally, online tutorials and Stack Overflow responses provided invaluable guidance throughout the project.
+6. **Savings Calculation:**
+   - Determine the savings from installing a battery.
+
+7. **Monthly Tabulation and Charting:**
+   - Tabulate and visualize monthly solar generation, electricity usage, and purchased electricity.
+
+#### Long-Term Projections
+To project future savings, we consider two scenarios of electricity price changes over 20 years.
+
+### Further Checks
+- **Internal Rate of Return (IRR) Calculation:**
+  - Calculate IRR for different scenarios.
+
+- **Additional Metrics:**
+  - Evaluate extra electricity met, implied savings, electricity price with inflation, NPV, and IRR.
+
+### Conclusion
+The documentation provides a detailed account of the model's steps, checks, and assumptions. It is structured logically for easy comprehension by both fellow and senior analysts. The model aims to offer valuable insights into the financial implications of integrating a battery into solar electricity generation.
