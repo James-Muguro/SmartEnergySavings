@@ -4,8 +4,6 @@ import pandas as pd  # Pandas for data manipulation and analysis
 import numpy as np   # NumPy for numerical operations
 import matplotlib.pyplot as plt  # Matplotlib for basic data visualization
 import seaborn as sns  # Seaborn for advanced data visualization
-import warnings  # Warnings to suppress unnecessary warnings
-warnings.filterwarnings("ignore")
 
 # Loading the date into our environment
 
