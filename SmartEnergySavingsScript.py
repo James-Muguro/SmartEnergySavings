@@ -4,13 +4,11 @@ import pandas as pd  # Pandas for data manipulation and analysis
 import numpy as np   # NumPy for numerical operations
 import matplotlib.pyplot as plt  # Matplotlib for basic data visualization
 import seaborn as sns  # Seaborn for advanced data visualization
-
-# Loading the date
-
 import ipywidgets as widgets
 from IPython.display import display, clear_output
 from tkinter import Tk, filedialog
-import pandas as pd
+
+# Loading the date
 
 def select_file(b):
     clear_output()
