@@ -1,11 +1,11 @@
-# To start working with the dataset, we will import the following libraries
+# import the relevant libraries
 
 import pandas as pd  # Pandas for data manipulation and analysis
 import numpy as np   # NumPy for numerical operations
 import matplotlib.pyplot as plt  # Matplotlib for basic data visualization
 import seaborn as sns  # Seaborn for advanced data visualization
 
-# Loading the date into our environment
+# Loading the date
 
 import ipywidgets as widgets
 from IPython.display import display, clear_output
@@ -227,8 +227,6 @@ plt.show()
 # for two scenarios: Electricity prices increase as expected by the government, 4% p.a and 
 # Electricity price increases start at 4% p.a. and rise each year by an additional 0.25% p.a
 
-
-
 import numpy_financial as npf
 
 # Discount rate
@@ -252,12 +250,9 @@ npv_2 = npf.npv(discount_rate, annual_savings_2)
 print(f'The NPV of the future annual savings for scenario 1 is ${npv_1:.2f}.')
 print(f'The NPV of the future annual savings for scenario 2 is ${npv_2:.2f}.')
 
-
 # Calculating the Internal Rate of Return (IRR) for the two scenarios above 
 # by determining the discount rate that equates the net present value of the future 
 # annual savings to the initial cost of the battery for each scenario.
-
-
 
 # Initial cost of battery
 initial_cost_of_battery = 7000 
@@ -297,6 +292,3 @@ df['IRR'] = irr(cash_flows)
 
 # Display the resulting DataFrame
 print(df[['Extra_Electricity', 'Implied_Savings', 'Electricity_Price', 'NPV', 'IRR']])
-
-
-
